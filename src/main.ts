@@ -16,7 +16,7 @@ async function bootstrap() {
   });
 
   const options = new DocumentBuilder()
-    .setTitle('Backend Template')
+    .setTitle('Nest.js Backend Template')
     .setDescription('Needs a better description')
     .setVersion('1.0')
     .build();

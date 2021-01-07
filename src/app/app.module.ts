@@ -3,6 +3,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { TestModule } from '../test/test.module';
 import { UsersModule } from '../users/users.module';
 
 @Module({
@@ -18,6 +19,7 @@ import { UsersModule } from '../users/users.module';
       synchronize: true,
     }),
     UsersModule,
+    TestModule
   ],
   controllers: [AppController],
   providers: [AppService],
